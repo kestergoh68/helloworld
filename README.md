@@ -17,9 +17,10 @@ __Linux__
 
 __Run by loading docker image__    
 *Please make sure docker is installed 
-1) open cmd and cd to project directory
-2) Enter “docker load < helloworld_demo.tar.gz”
-3) Enter “docker run -p 5000:8080 demo/helloworld”
+1) Download helloworld_demo.tar.gz from release
+2) open cmd and cd to project directory
+3) Enter “docker load < helloworld_demo.tar.gz”
+4) Enter “docker run -p 5000:8080 demo/helloworld”
 
 Verification  
 Please access http://localhost:5000/hello in browser to verify
