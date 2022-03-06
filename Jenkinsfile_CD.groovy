@@ -2,17 +2,16 @@ pipeline{
 	agent any
 	
 	stages{
-		stage('Checkout'){
-			steps{
-				//add credentialsId: 'your_credential' if required
-                                git branch: 'main', url: 'https://github.com/kestergoh68/helloworld.git'
-			}		
-		}
+		//continued from JenkinsCI pipeline
 		
 		stage('Deploy'){
 			steps{
 				sh 'docker-compose up -d'
 			}
 		}
+		
+		//stage('Api Availability Test')
+		//stage('Vulnerability Test')
+		//stage('Load Test')
 	}
 }
